@@ -1,0 +1,20 @@
+table {
+    width: 50%;
+  }
+  
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .table-container {
+    width: 50%;  /* Ajusta o valor de acordo com o tamanho desejado */
+    margin: 0 auto; /* Centraliza a tabela horizontalmente */
+    }
+    
+    
+  
+  td, th {
+    width: 25%;
+  }
+  
