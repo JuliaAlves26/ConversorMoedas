@@ -7,13 +7,16 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule } from '@angular/material/icon';
 import {MatTableModule } from '@angular/material/table';
-import {MatPaginatorModule } from '@angular/material/paginator';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import {MatFormFieldModule } from '@angular/material/form-field';
 import {NgModule } from '@angular/core';
 import {PrincipalComponent } from './principal/principal.component';
 import {RodapeComponent } from './rodape/rodape.component';
 import {TopoComponent } from './topo/topo.component';
-import {TableComponent } from './table/table.component';
+import {ConverterMoedasComponent } from './converter-moedas/converter-moedas.component';
+import {HistoricoConversoesComponent } from './historico-conversoes/historico-conversoes.component';
+import {ListarMoedasComponent } from './listar-moedas/listar-moedas.component';
+import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -23,7 +26,9 @@ import {TableComponent } from './table/table.component';
     TopoComponent,
     PrincipalComponent,
     RodapeComponent,
-    TableComponent
+    ConverterMoedasComponent,
+    HistoricoConversoesComponent,
+    ListarMoedasComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,10 +41,11 @@ import {TableComponent } from './table/table.component';
     MatPaginatorModule,
     MatFormFieldModule,
     HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
 

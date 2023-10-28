@@ -1,13 +1,18 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PrincipalComponent } from './principal/principal.component';
-import { TableComponent } from './table/table.component';
+import { ListarMoedasComponent } from './listar-moedas/listar-moedas.component';
+import { ConverterMoedasComponent } from './converter-moedas/converter-moedas.component';
+import { HistoricoConversoesComponent } from './historico-conversoes/historico-conversoes.component';
 
 
 const routes: Routes = [
   {path: "", redirectTo: 'principal', pathMatch: 'full'},
   {path: "principal", component: PrincipalComponent},
-  {path: "table", component: TableComponent},
+  {path: "listar-moedas", component: ListarMoedasComponent},
+  {path: "converter-moedas", component: ConverterMoedasComponent},
+  {path: "historico-moedas", component: HistoricoConversoesComponent},
+
 
 ];
 
