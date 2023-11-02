@@ -7,16 +7,18 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule } from '@angular/material/icon';
 import {MatTableModule } from '@angular/material/table';
-import {MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import {MatPaginatorModule } from '@angular/material/paginator';
 import {MatFormFieldModule } from '@angular/material/form-field';
 import {NgModule } from '@angular/core';
 import {PrincipalComponent } from './principal/principal.component';
-import {RodapeComponent } from './rodape/rodape.component';
 import {TopoComponent } from './topo/topo.component';
-import {ConverterMoedasComponent } from './converter-moedas/converter-moedas.component';
-import {HistoricoConversoesComponent } from './historico-conversoes/historico-conversoes.component';
+import {ConverterComponent} from './converter-moedas/converter-moedas.component';
+import {HistoricoConversoesComponent} from './historico-conversoes/historico-conversoes.component';
 import {ListarMoedasComponent } from './listar-moedas/listar-moedas.component';
-import { MatInputModule } from '@angular/material/input';
+import {MatInputModule } from '@angular/material/input';
+import {FormsModule } from '@angular/forms';
+import {MatSortModule } from '@angular/material/sort';
+import { MatSelectModule } from '@angular/material/select';
 
 
 
@@ -25,10 +27,10 @@ import { MatInputModule } from '@angular/material/input';
     AppComponent,
     TopoComponent,
     PrincipalComponent,
-    RodapeComponent,
-    ConverterMoedasComponent,
+    ConverterComponent,
     HistoricoConversoesComponent,
     ListarMoedasComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -41,8 +43,11 @@ import { MatInputModule } from '@angular/material/input';
     MatPaginatorModule,
     MatFormFieldModule,
     HttpClientModule,
-    MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    MatSelectModule,
+    MatSortModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
